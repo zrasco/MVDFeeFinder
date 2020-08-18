@@ -1,0 +1,174 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NVFC_AZ             ICON                    "NVFC_AZ.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_NVFC_AZ MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_NVFC_AZ ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FEE DIALOGEX 0, 0, 235, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_OVERLAPPEDWINDOW | WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+CAPTION "Fee Finder v1.1"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,12,10,211,24
+    LTEXT           "FLP(Factory list price):",IDC_STATIC,21,19,73,8
+    EDITTEXT        IDC_EDITFLP,133,16,40,14,0,WS_EX_RIGHT
+    GROUPBOX        "",IDC_STATIC,12,38,211,80
+    LTEXT           "REG(Registration fee):",IDC_STATIC,21,67,74,8
+    EDITTEXT        IDC_EDITREG,133,65,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    LTEXT           "AQF:",IDC_STATIC,21,84,18,8
+    LTEXT           "VLT(Vehicle license tax):",IDC_STATIC,21,51,78,8
+    EDITTEXT        IDC_EDITVLT,133,48,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    EDITTEXT        IDC_EDITAQF,133,82,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    LTEXT           "TTL:",IDC_STATIC,21,101,15,8
+    EDITTEXT        IDC_EDITTTL,133,98,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    CONTROL         "Total:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,21,124,20,8
+    EDITTEXT        IDC_EDITTOTAL,178,121,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    GROUPBOX        "",IDC_STATIC,12,134,212,47
+    LTEXT           "TRN:",IDC_STATIC,21,145,17,8
+    EDITTEXT        IDC_EDITTRN,133,142,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    LTEXT           "PCR(Plate credit reduction):",IDC_STATIC,21,163,90,8
+    EDITTEXT        IDC_EDITPCR,133,161,40,14,ES_RIGHT,WS_EX_RIGHT
+    LTEXT           "Grand Total:",IDC_STATIC,21,193,41,8
+    EDITTEXT        IDC_EDITGRANDTOTAL,178,191,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    GROUPBOX        "New Vehicle Fee Finder",IDC_STATIC,7,3,221,212
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FEE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "NVFC_AZ"
+    IDC_NVFC_AZ             "NVFC_AZ"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
